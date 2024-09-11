@@ -6,8 +6,8 @@
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Register</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Login</a>
+          <RouterLink class="me-3 py-2 link-body-emphasis text-decoration-none" :to="{name:'register'}">Register</RouterLink>
+          <RouterLink class="me-3 py-2 link-body-emphasis text-decoration-none"  :to="{name:'login'}">Login</RouterLink>
       </nav>
     </div>
   </header>
@@ -16,7 +16,9 @@
 export default {
   methods:{
     toHomeHandler(){
-      return this.$router.push('/')
+      return (
+        this.$router.push('/')
+      )
     }
   }
     
