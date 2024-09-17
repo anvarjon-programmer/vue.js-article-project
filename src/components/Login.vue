@@ -12,7 +12,7 @@
         Remember me
       </label>
     </div>
-    <Button type="submit">Login</Button>
+    <Button type="submit" disabled="true">Login</Button>
     <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
   </form>
 </main>
